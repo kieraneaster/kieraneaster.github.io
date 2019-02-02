@@ -1,4 +1,6 @@
 <!doctype html>
+<!DOCTYPE html>
+<html>
 <head>
 	<link rel="stylesheet" type="text/css" href="normalize.css">
 	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
@@ -8,11 +10,27 @@
 			    margin: 0 auto;
 				max-width: 700px;
   				height: 100px;
-  				background-color: #ccc;
-				border-radius: 3px;
 			}
-	</style></head>
+		
+		.blink 
+			{
+			    animation-duration: 1s;
+			    animation-name: blink;
+			    animation-iteration-count: infinite;
+			    animation-timing-function: steps(2, start);
+			}
+		
+		@keyframes blink {
+		    80% {
+		        visibility: hidden;
+		    }
+		}
+	</style>
+	<title>Hello</title>
+</head>
 <body style="background-color: black">
-	<div class="center-div" style="font-family: 'Press Start 2P', cursive; color: white">Hello
+	<div class="center-div" style="font-family: 'Press Start 2P', cursive; color: white"><p class="blink">Hello</p>
 	</div>
 </body>
+</html>
+
