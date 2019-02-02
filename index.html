@@ -3,11 +3,10 @@
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 	<style>
-		.parent {
-			  display: flex;
-			  justify-content: center;
-			  align-items: center;
-			}
+		body, html {
+		  height: 100%;
+		  display: grid;
+		}
 		.blink 
 			{
 			    animation-duration: 1s;
@@ -29,10 +28,8 @@
 
 <body style="background-color: black; color: white; font-family: 'Press Start 2P', cursive;">
 
-	<div class="parent">
-		<p style="font-size: 2em">Hello..<span class="blink">.</span></p>
-	</div>
-	
+		<span style="margin: auto; font-size: 2em">Hello..<span class="blink">.</span></span>
+
 </body>
 </html>
 
